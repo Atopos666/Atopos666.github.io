@@ -1,10 +1,8 @@
 ---
 layout: page
 permalink: /blogs/cs184_milestone/index.html
-title: Lance的AAAI参会实录
+title: Milestone for MGPCG Algorithm Implementation
 ---
-
-## Milestone for MGPCG Algorithm Implementation
 
 > Posted on 2024-04-03
 
@@ -44,11 +42,15 @@ As part of our final project, we aim to integrate an efficient Multigrid-precond
 
      - We have successfully implemented the grid discretization for the Poisson equation and developed functions for coarsening the grid as part of our approach to solve the equation. Additionally, several sub-functions including iterative processes and smoothers have been completed. However, we are still encountering issues with solving the overall equation programmatically, which is our current focus to resolve.
 
-     ![gird](cs184.assets\gird.png)
+     <br>
+
+     ![gird](cs184.assets/gird.png)
 
      after downsample:
 
-     ![downsample_gird](cs184.assets\downsample_gird.png)
+     <br>
+
+     ![downsample_gird](cs184.assets/downsample_gird.png)
 
    - Challenges Encountered:
 
