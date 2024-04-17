@@ -4,7 +4,7 @@ permalink: /blogs/index.html
 title: Blogs
 ---
 
-- > Posted on 2024-04-16
+ > Posted on 2024-04-16
 
   #### Project Members:
 
@@ -48,6 +48,7 @@ title: Blogs
        <img src="/images/grid.png">
        </div>
 
+
        after downsample:
 
        <br>
@@ -72,7 +73,7 @@ title: Blogs
        <br>
      
        <div>
-     <img src="/images/bunny.png">
+       <img src="/images/bunny.png">
        </div>
      - Challenges Encountered:
        - The images produced by the wavefront path tracer are dimmer than those produced by the CPU path tracer. Investigating the causes for this issue and exploring the integration of volumetric rendering within the wavefront path tracing framework.
@@ -89,7 +90,7 @@ title: Blogs
      - The current GPU solver implementation heavily mirrors the structure of the CPU solver, leading to significant code duplication and potential inefficiencies.
        - Initial profiling indicates several optimization opportunities. Particularly, the current Red-Black Gauss-Seidel implementation is suboptimal, requiring multiple DRAM trips to load data for red and black points separately, which only activates half of the GPU threads at a time.
        - Plans are underway to refactor this implementation to utilize shared memory more effectively, allowing for concurrent activation of all threads and reducing memory traffic. Combining some kernels, such as the restriction and residual kernels, into a single operation could further optimize performance.
-  
+
   5. **Performance Evaluation and Final Adjustments (Upcoming)**
   
      - **Planned Start Date:** Week 4 of Project Timeline
@@ -100,12 +101,11 @@ title: Blogs
    - Goals:
        - Achieve significant performance improvements over the CPU-based systems.
        - Ensure the physical correctness of the simulation and rendering results.
-  
+
 ### Next Steps:
-  
+
 - Complete the GPU porting of the MGPCG algorithm and the wavefront path tracing framework.
   - Begin comprehensive integration testing with the complete simulation and rendering system.
 - Conduct detailed performance analysis to identify and address any inefficiencies.
   
-
 
