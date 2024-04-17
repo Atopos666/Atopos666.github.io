@@ -6,18 +6,18 @@ title: Blogs
 
  > Posted on 2024-04-16
 
-  #### Project Members:
+###  Project Members:
 
   - Xuanye Chen
   - Zhenzhe Li
   - Ruijie Jian
   - Huasen Xi
 
-  #### Project Summary:
+### Project Summary:
 
   As part of our final project, we aim to integrate an efficient Multigrid-preconditioned Conjugate Gradient (MGPCG) method into our GPU-based fluid simulation system. This algorithm is crucial for solving the projection Poisson equation efficiently, which is a central component of maintaining the incompressibility of the fluid in our simulation.
 
-  #### Current Progress:
+####  Current Progress:
 
   1. **Initial Research and Planning (Completed)**
 
@@ -50,15 +50,15 @@ title: Blogs
 
 
        after downsample:
-
+    
        <br>
-
+    
        <div>
        <img src="/images/downsample_grid.png">
        </div>
-
+    
      - Challenges Encountered:
-
+    
        - Despite the progress in developing the necessary components of the MGPCG algorithm, there are still reservations about the efficiency and stability of the convergence of the algorithm. Ensuring the high performance and reliable convergence of the algorithm remains a significant challenge, which we are actively working to address. We anticipate resolving these issues shortly, but the concerns about algorithmic efficiency and stability are ongoing.
 
   3. **Wavefront Path Tracing Renderer Development (In Progress)**
@@ -102,7 +102,7 @@ title: Blogs
        - Achieve significant performance improvements over the CPU-based systems.
        - Ensure the physical correctness of the simulation and rendering results.
 
-### Next Steps:
+#### Next Steps:
 
 - Complete the GPU porting of the MGPCG algorithm and the wavefront path tracing framework.
   - Begin comprehensive integration testing with the complete simulation and rendering system.
