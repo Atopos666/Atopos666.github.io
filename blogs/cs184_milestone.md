@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/cs184_milestone/index.html
+permalink: /blogs/index.html
 title: Milestone for MGPCG Algorithm Implementation
 ---
 
