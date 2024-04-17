@@ -70,9 +70,9 @@ title: Blogs
        - The renderer has been tested on the CBbunny scene, outperforming a CPU multi-threaded path tracer by completing the task in half the time. The use of MIS has significantly sped up convergence:
        
        <br>
-       
+     
        <div>
-       <img src="/images/bunny.png">
+     <img src="/images/bunny.png">
        </div>
      - Challenges Encountered:
        - The images produced by the wavefront path tracer are dimmer than those produced by the CPU path tracer. Investigating the causes for this issue and exploring the integration of volumetric rendering within the wavefront path tracing framework.
@@ -80,13 +80,13 @@ title: Blogs
   4. **Development of GPU-Accelerated Multigrid Poisson Solver (In Progress)**
   
      - **Date:** Concurrent with MGPCG development
-     - Current Status:
+   - Current Status:
      
        - We have implemented a multigrid solver for the 2D Poisson equation with Dirichlet boundary conditions, utilizing second-order finite differences for discretization and conservative prolongation and restriction operators.
        - The solver has two versions: one that runs on a single-threaded CPU and another optimized for GPU using custom CUDA kernels. The GPU solver employs a Red-Black Gauss-Seidel smoother to exploit parallelism effectively.
-       - Performance tests show that the CUDA-based solver drastically reduces the number of iterations needed to achieve low residuals, proving its efficiency over the CPU-based approach in terms of both speed and accuracy.
+     - Performance tests show that the CUDA-based solver drastically reduces the number of iterations needed to achieve low residuals, proving its efficiency over the CPU-based approach in terms of both speed and accuracy.
      - Challenges Encountered:
-       - The current GPU solver implementation heavily mirrors the structure of the CPU solver, leading to significant code duplication and potential inefficiencies.
+     - The current GPU solver implementation heavily mirrors the structure of the CPU solver, leading to significant code duplication and potential inefficiencies.
        - Initial profiling indicates several optimization opportunities. Particularly, the current Red-Black Gauss-Seidel implementation is suboptimal, requiring multiple DRAM trips to load data for red and black points separately, which only activates half of the GPU threads at a time.
        - Plans are underway to refactor this implementation to utilize shared memory more effectively, allowing for concurrent activation of all threads and reducing memory traffic. Combining some kernels, such as the restriction and residual kernels, into a single operation could further optimize performance.
   
@@ -95,23 +95,17 @@ title: Blogs
      - **Planned Start Date:** Week 4 of Project Timeline
      - Planned Activities:
        - Benchmark the performance of the GPU-based systems against the existing CPU-based systems.
-       - Address any identified performance bottlenecks.
+     - Address any identified performance bottlenecks.
        - Finalize integration and prepare for the project demonstration.
-     - Goals:
+   - Goals:
        - Achieve significant performance improvements over the CPU-based systems.
        - Ensure the physical correctness of the simulation and rendering results.
   
-  ### Next Steps:
+### Next Steps:
   
-  - Complete the GPU porting of the MGPCG algorithm and the wavefront path tracing framework.
+- Complete the GPU porting of the MGPCG algorithm and the wavefront path tracing framework.
   - Begin comprehensive integration testing with the complete simulation and rendering system.
-  - Conduct detailed performance analysis to identify and address any inefficiencies.
+- Conduct detailed performance analysis to identify and address any inefficiencies.
   
-  ### Conclusion
-  
-  The development and integration of the MGPCG algorithm are critical for enhancing the performance of our GPU-accelerated fluid simulation system. Achieving this milestone will not only demonstrate the technical capabilities of our team but also significantly advance the state of our final project.
-  
-  This milestone documentation should provide a clear and structured record of the MGPCG algorithm's implementation phases within our project. This will assist in tracking progress, evaluating performance, and ensuring successful completion of the integration.
-  
-  
+
 

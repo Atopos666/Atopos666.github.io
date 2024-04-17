@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /blogs/index.html
-title: Milestone for MGPCG Algorithm Implementation
+permalink: /blogs/cs184_milestone/index.html
+title: Milestone for cs184_final_project
 ---
 
 > Posted on 2024-04-03
@@ -16,6 +16,8 @@ title: Milestone for MGPCG Algorithm Implementation
 #### Project Summary:
 
 As part of our final project, we aim to integrate an efficient Multigrid-preconditioned Conjugate Gradient (MGPCG) method into our GPU-based fluid simulation system. This algorithm is crucial for solving the projection Poisson equation efficiently, which is a central component of maintaining the incompressibility of the fluid in our simulation.
+
+### MGPCG Algorithm Implementation:
 
 #### Current Progress:
 
