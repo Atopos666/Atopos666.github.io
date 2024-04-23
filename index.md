@@ -8,7 +8,7 @@ layout: page
 
 Here is **Huasen Xi (Henry, 席华森)**.
 
-I am a senior undergrad majoring in Computer Science and minoring in Artificial Intelligence at University of Chinese Academy of Science. I also majored in artificial intelligence Currently, I am an exchange student at the University of California, Berkeley. 
+I am a junior undergrad majoring in Computer Science and minoring in Artificial Intelligence at University of Chinese Academy of Science. I also majored in artificial intelligence Currently, I am an exchange student at the University of California, Berkeley. 
 
 If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - *huasenxi[at]mais[dot]ucas[dot]ac[dot]cn*
 
